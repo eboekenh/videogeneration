@@ -1,0 +1,19 @@
+{
+  "title": "Odysseus Untimed Example",
+  "scenes": [
+    {
+      "id": 1,
+      "sentence": "Odiseus kimdir?",
+      "image": "001_odysseus.jpg",
+      "duration": 3.0,
+      "motion": "zoom_in"
+    },
+    {
+      "id": 2,
+      "sentence": "Zekâsıyla Truva Savaşı'nın kaderini değiştiren İthaka kralıdır.",
+      "image": "002_trojan_horse.jpg",
+      "duration": 4.0,
+      "motion": "pan_right"
+    }
+  ]
+}

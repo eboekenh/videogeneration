@@ -1,0 +1,19 @@
+[project]
+name = "mythology-video-automation"
+version = "1.0.0"
+description = "Storyboard-driven mythology video automation with FFmpeg"
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10.4,<12"]
+
+[project.scripts]
+mythology-video = "mythology_video.cli:main"
+
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

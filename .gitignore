@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.cache/
+output/*
+!output/.gitkeep
+project/*.mp3
+project/*.wav
+project/*.m4a
+project/images/*
+!project/images/.gitkeep
+project/music/*
+!project/music/.gitkeep
+*.log
+.DS_Store
