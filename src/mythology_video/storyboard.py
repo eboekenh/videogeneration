@@ -78,13 +78,17 @@ def _normalize_scene(raw: dict[str, Any], index: int) -> Scene:
     sentence = str(raw.get("sentence", raw.get("text", ""))).strip()
     image = str(raw.get("image", raw.get("image_file", ""))).strip()
 
-    if "start" in raw and "end" in raw:
-        start = _number(raw["start"], "start", scene_id)
-        end = _number(raw["end"], "end", scene_id)
-    elif "duration" in raw:
+    start_value = raw.get("start", raw.get("start_sec"))
+    end_value = raw.get("end", raw.get("end_sec"))
+    duration_value = raw.get("duration", raw.get("duration_sec"))
+
+    if start_value is not None and end_value is not None:
+        start = _number(start_value, "start", scene_id)
+        end = _number(end_value, "end", scene_id)
+    elif duration_value is not None:
         # The caller later converts relative durations to a contiguous timeline.
         start = float("nan")
-        end = _number(raw["duration"], "duration", scene_id)
+        end = _number(duration_value, "duration", scene_id)
     else:
         raise ValueError(
             f"Scene {scene_id}: provide either 'start' and 'end', or 'duration'."
