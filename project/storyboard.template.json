@@ -1,0 +1,16 @@
+{
+  "title": "Odysseus",
+  "scenes": [
+    {
+      "id": 1,
+      "sentence": "Odiseus kimdir?",
+      "image": "001_odysseus.jpg",
+      "start": 0.0,
+      "end": 3.5,
+      "motion": "zoom_in",
+      "focus_x": 0.5,
+      "focus_y": 0.42,
+      "zoom": 1.08
+    }
+  ]
+}

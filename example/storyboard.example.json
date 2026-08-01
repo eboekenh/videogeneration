@@ -1,0 +1,38 @@
+{
+  "title": "Odysseus Demo",
+  "scenes": [
+    {
+      "id": 1,
+      "sentence": "Odiseus kimdir?",
+      "image": "001_odysseus.jpg",
+      "start": 0.0,
+      "end": 3.0,
+      "motion": "zoom_in",
+      "focus_x": 0.5,
+      "focus_y": 0.42,
+      "zoom": 1.08
+    },
+    {
+      "id": 2,
+      "sentence": "Zekâsıyla Truva Savaşı'nın kaderini değiştiren İthaka kralıdır.",
+      "image": "002_trojan_horse.jpg",
+      "start": 3.0,
+      "end": 7.0,
+      "motion": "pan_right",
+      "focus_x": 0.5,
+      "focus_y": 0.5,
+      "zoom": 1.1
+    },
+    {
+      "id": 3,
+      "sentence": "Ama eve dönüş yolculuğu tam on yıl sürer.",
+      "image": "003_sea.jpg",
+      "start": 7.0,
+      "end": 11.0,
+      "motion": "zoom_out",
+      "focus_x": 0.5,
+      "focus_y": 0.5,
+      "zoom": 1.08
+    }
+  ]
+}

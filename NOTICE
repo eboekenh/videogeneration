@@ -1,0 +1,6 @@
+This project is a storyboard-driven derivative inspired by:
+https://github.com/ChaitanyaEswarRajeshJakki/gemini-youtube-automation
+
+The linked project describes itself as MIT licensed. This derivative replaces the
+original autonomous lesson/TTS/Pexels pipeline with a sentence-synchronised video
+builder designed for existing narration and curated images.

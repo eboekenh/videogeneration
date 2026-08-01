@@ -1,0 +1,57 @@
+name: Build mythology video
+
+on:
+  workflow_dispatch:
+    inputs:
+      preview:
+        description: "Build a faster 540p preview"
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install FFmpeg and Python dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate project
+        run: |
+          python validate_storyboard.py \
+            --storyboard project/storyboard.json \
+            --audio project/audio.mp3 \
+            --images project/images \
+            --report output/validation-report.json
+
+      - name: Build video
+        shell: bash
+        run: |
+          PREVIEW_FLAG=""
+          if [[ "${{ inputs.preview }}" == "true" ]]; then PREVIEW_FLAG="--preview"; fi
+          MUSIC_FLAG=""
+          if [[ -f project/music/background.mp3 ]]; then MUSIC_FLAG="--music project/music/background.mp3"; fi
+          python build_video.py \
+            --storyboard project/storyboard.json \
+            --audio project/audio.mp3 \
+            --images project/images \
+            --output output/mythology-video.mp4 \
+            $MUSIC_FLAG $PREVIEW_FLAG
+
+      - name: Upload result
+        uses: actions/upload-artifact@v4
+        with:
+          name: mythology-video
+          path: output/
+          retention-days: 7
