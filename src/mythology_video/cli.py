@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import time
 from pathlib import Path
 
 from .alignment import align_storyboard
@@ -93,7 +94,17 @@ def build_command(args: argparse.Namespace) -> int:
         keep_workdir=args.keep_workdir,
     )
     music = args.music if args.music and args.music.is_file() else None
+    started = time.monotonic()
     build_video(storyboard, args.images, args.audio, args.output, settings, music)
+    elapsed = time.monotonic() - started
+    minutes, seconds = divmod(int(elapsed), 60)
+    size_mb = args.output.stat().st_size / (1024 * 1024)
+    print("=" * 50)
+    print("✅ BUILD COMPLETE")
+    print(f"   Output   : {args.output}")
+    print(f"   Size     : {size_mb:.1f} MB")
+    print(f"   Duration : {minutes}m {seconds}s")
+    print("=" * 50)
     return 0
 
 
@@ -171,6 +182,13 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> int:
+    # Emoji status markers (✅/⚠️/❌) crash with UnicodeEncodeError when stdout/stderr
+    # aren't attached to a real console (piped, redirected to a log file, etc.),
+    # since Windows then falls back to the legacy ANSI codepage instead of UTF-8.
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    if hasattr(sys.stderr, "reconfigure"):
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
     parser = build_parser()
     args = parser.parse_args(argv)
     try:
