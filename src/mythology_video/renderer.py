@@ -252,12 +252,27 @@ def _concat_without_transition(scene_paths: list[Path], destination: Path) -> No
         list_file.unlink(missing_ok=True)
 
 
-def _concat_with_xfade(
+# Max number of "-i" inputs to hand ffmpeg in a single xfade pass. Windows has a
+# ~32k character command-line limit, and very long xfade filter graphs also get slow
+# to build; chunking keeps every individual ffmpeg invocation small and reliable
+# regardless of how many scenes the storyboard has.
+_XFADE_CHUNK_SIZE = 40
+
+
+def _xfade_pass(
     scene_paths: list[Path],
     scene_durations: list[float],
     destination: Path,
     settings: RenderSettings,
+    final_trim: bool,
 ) -> None:
+    """Merge <= _XFADE_CHUNK_SIZE clips with crossfades in a single ffmpeg call.
+
+    When final_trim is False, this pass is an intermediate step in a larger
+    hierarchical merge: the trailing "extra" padding baked into the last input
+    clip (rendered longer so it has material to crossfade into whatever comes
+    next) must be preserved in the output, so no "-t" trim is applied.
+    """
     if len(scene_paths) == 1:
         shutil.copy2(scene_paths[0], destination)
         return
@@ -302,17 +317,58 @@ def _concat_with_xfade(
             "yuv420p",
             "-r",
             str(settings.fps),
-            "-t",
-            _safe_float(sum(scene_durations)),
-            "-movflags",
-            "+faststart",
-            str(destination),
         ]
     )
+    if final_trim:
+        command.extend(["-t", _safe_float(sum(scene_durations))])
+    command.extend(["-movflags", "+faststart", str(destination)])
     try:
         run_command(command, quiet=True)
     finally:
         filter_file.unlink(missing_ok=True)
+
+
+def _concat_with_xfade(
+    scene_paths: list[Path],
+    scene_durations: list[float],
+    destination: Path,
+    settings: RenderSettings,
+) -> None:
+    if len(scene_paths) == 1:
+        shutil.copy2(scene_paths[0], destination)
+        return
+
+    if len(scene_paths) <= _XFADE_CHUNK_SIZE:
+        _xfade_pass(scene_paths, scene_durations, destination, settings, final_trim=True)
+        return
+
+    # Too many inputs for one ffmpeg command: merge hierarchically in chunks so
+    # every individual ffmpeg call stays small, then merge the merged pieces.
+    transition_duration = settings.transition_duration
+    workdir = destination.parent
+    level_paths: list[Path] = list(scene_paths)
+    level_durations: list[float] = list(scene_durations)
+    level = 0
+
+    while len(level_paths) > _XFADE_CHUNK_SIZE:
+        next_paths: list[Path] = []
+        next_durations: list[float] = []
+        for chunk_index, start in enumerate(range(0, len(level_paths), _XFADE_CHUNK_SIZE)):
+            chunk_paths = level_paths[start : start + _XFADE_CHUNK_SIZE]
+            chunk_durations = level_durations[start : start + _XFADE_CHUNK_SIZE]
+            if len(chunk_paths) == 1:
+                next_paths.append(chunk_paths[0])
+                next_durations.append(chunk_durations[0])
+                continue
+            merged_path = workdir / f"xfade_merge_L{level}_{chunk_index}.mp4"
+            _xfade_pass(chunk_paths, chunk_durations, merged_path, settings, final_trim=False)
+            merged_duration = sum(chunk_durations) - transition_duration * (len(chunk_durations) - 1)
+            next_paths.append(merged_path)
+            next_durations.append(merged_duration)
+        level_paths, level_durations = next_paths, next_durations
+        level += 1
+
+    _xfade_pass(level_paths, level_durations, destination, settings, final_trim=True)
 
 
 def combine_video_and_audio(
