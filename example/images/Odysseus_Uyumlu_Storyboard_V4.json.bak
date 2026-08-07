@@ -11,10 +11,8 @@
     "image": "panel_01.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 2,
@@ -28,10 +26,8 @@
     "image": "Dramatischer Seefahrer im Sonnenuntergang.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Troya/Truva bağlamını, tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 3,
@@ -75,10 +71,8 @@
     "image": "scene_05.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “AÇILIŞ: ODYSSEUS KİMDİR?” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 6,
@@ -92,10 +86,8 @@
     "image": "scene_06.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Troya/Truva bağlamını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 7,
@@ -139,10 +131,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Troya/Truva bağlamını, tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 10,
@@ -156,10 +146,8 @@
     "image": "panel_01.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 11,
@@ -203,10 +191,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 14,
@@ -220,10 +206,8 @@
     "image": "panel_06.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “AÇILIŞ: ODYSSEUS KİMDİR?” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 15,
@@ -267,10 +251,8 @@
     "image": "Dramatischer Seefahrer im Sonnenuntergang.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 18,
@@ -284,10 +266,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 19,
@@ -331,10 +311,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 22,
@@ -348,10 +326,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 23,
@@ -395,10 +371,8 @@
     "image": "scene_05.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, savaş atmosferini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 26,
@@ -412,10 +386,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 27,
@@ -459,10 +431,8 @@
     "image": "Epos am Lagerfeuer im Feldlager.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, savaş atmosferini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 30,
@@ -476,10 +446,8 @@
     "image": "Epos am Lagerfeuer im Feldlager.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki savaş atmosferini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 31,
@@ -523,10 +491,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 34,
@@ -540,10 +506,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 35,
@@ -587,10 +551,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 38,
@@ -604,10 +566,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 39,
@@ -651,10 +611,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 42,
@@ -668,10 +626,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 43,
@@ -715,10 +671,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 46,
@@ -732,10 +686,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 47,
@@ -779,10 +731,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 50,
@@ -796,10 +746,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 51,
@@ -843,10 +791,8 @@
     "image": "Old Homer Writing The Iliad.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 54,
@@ -860,10 +806,8 @@
     "image": "Küstenwache im goldenen Abendlicht.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 55,
@@ -907,10 +851,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Troya/Truva bağlamını, tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 58,
@@ -924,10 +866,8 @@
     "image": "panel_14.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, deniz yolculuğunu doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 59,
@@ -971,10 +911,8 @@
     "image": "panel_15.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “ON YILLIK KUŞATMA” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 62,
@@ -988,10 +926,8 @@
     "image": "panel_15.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “ON YILLIK KUŞATMA” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 63,
@@ -1035,10 +971,8 @@
     "image": "Old Homer Writing The Iliad.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, savaş atmosferini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 66,
@@ -1052,10 +986,8 @@
     "image": "Old Homer Writing The Iliad.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, savaş atmosferini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 67,
@@ -1099,10 +1031,8 @@
     "image": "Old Homer Writing The Iliad.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 70,
@@ -1116,10 +1046,8 @@
     "image": "Old Homer Writing The Iliad.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “ON YILLIK KUŞATMA” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 71,
@@ -1163,10 +1091,8 @@
     "image": "panel_01.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 74,
@@ -1180,10 +1106,8 @@
     "image": "panel_01.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “ON YILLIK KUŞATMA” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 75,
@@ -1227,10 +1151,8 @@
     "image": "panel_56.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 78,
@@ -1244,10 +1166,8 @@
     "image": "panel_01.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 79,
@@ -1291,10 +1211,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 82,
@@ -1308,10 +1226,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 83,
@@ -1355,10 +1271,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 86,
@@ -1372,10 +1286,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 87,
@@ -1419,10 +1331,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 90,
@@ -1436,10 +1346,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 91,
@@ -1483,10 +1391,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 94,
@@ -1500,10 +1406,8 @@
     "image": "panel_12.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “TRUVA ATI VE ZEUS’UN YASASI” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 95,
@@ -1547,10 +1451,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Troya/Truva bağlamını, tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 98,
@@ -1564,10 +1466,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 99,
@@ -1611,10 +1511,8 @@
     "image": "Old Homer Writing The Iliad.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 102,
@@ -1628,10 +1526,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 103,
@@ -1675,10 +1571,8 @@
     "image": "panel_04.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, savaş atmosferini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 106,
@@ -1692,10 +1586,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 107,
@@ -1739,10 +1631,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 110,
@@ -1756,10 +1646,8 @@
     "image": "panel_05.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, deniz yolculuğunu doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 111,
@@ -1803,10 +1691,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 114,
@@ -1820,10 +1706,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 115,
@@ -1867,10 +1751,8 @@
     "image": "panel_16.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 118,
@@ -1884,10 +1766,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 119,
@@ -1931,10 +1811,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 122,
@@ -1948,10 +1826,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 123,
@@ -1995,10 +1871,8 @@
     "image": "panel_15.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 126,
@@ -2012,10 +1886,8 @@
     "image": "panel_06.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “EVE DÖNÜŞÜN İLK GÜNAHLARI” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 127,
@@ -2059,10 +1931,8 @@
     "image": "panel_07.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, İthaka ve eve dönüş temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 130,
@@ -2076,10 +1946,8 @@
     "image": "panel_16.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 131,
@@ -2123,10 +1991,8 @@
     "image": "panel_06.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Kalypso bölümünü, lotus ve unutma temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 134,
@@ -2140,10 +2006,8 @@
     "image": "panel_06.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki savaş atmosferini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 135,
@@ -2187,10 +2051,8 @@
     "image": "panel_17.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, mağara sahnesini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 138,
@@ -2204,10 +2066,8 @@
     "image": "panel_17.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, mağara sahnesini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 139,
@@ -2251,10 +2111,8 @@
     "image": "panel_17.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 142,
@@ -2268,10 +2126,8 @@
     "image": "panel_17.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “POLYPHEMOS: ZEKÂ ONU KURTARDI, GURURU ELE VERDİ” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 143,
@@ -2315,10 +2171,8 @@
     "image": "panel_18.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Polyphemos/Kiklop olayını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 146,
@@ -2332,10 +2186,8 @@
     "image": "panel_22.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Poseidon ve deniz tehdidini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 147,
@@ -2379,10 +2231,8 @@
     "image": "panel_18.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Polyphemos/Kiklop olayını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 150,
@@ -2396,10 +2246,8 @@
     "image": "panel_18.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 151,
@@ -2443,10 +2291,8 @@
     "image": "panel_18.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, mağara sahnesini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 154,
@@ -2460,10 +2306,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 155,
@@ -2507,10 +2351,8 @@
     "image": "panel_21.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 158,
@@ -2524,10 +2366,8 @@
     "image": "panel_19.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “POLYPHEMOS: ZEKÂ ONU KURTARDI, GURURU ELE VERDİ” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 159,
@@ -2571,10 +2411,8 @@
     "image": "panel_18.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Polyphemos/Kiklop olayını, mağara sahnesini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 162,
@@ -2588,10 +2426,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 163,
@@ -2635,10 +2471,8 @@
     "image": "panel_18.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Polyphemos/Kiklop olayını, koyunlarla kaçış planını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 166,
@@ -2652,10 +2486,8 @@
     "image": "panel_20.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 167,
@@ -2699,10 +2531,8 @@
     "image": "panel_19.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 170,
@@ -2716,10 +2546,8 @@
     "image": "panel_21.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki deniz yolculuğunu doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 171,
@@ -2763,10 +2591,8 @@
     "image": "panel_21.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Poseidon ve deniz tehdidini, Polyphemos/Kiklop olayını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 174,
@@ -2780,10 +2606,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 175,
@@ -2827,10 +2651,8 @@
     "image": "panel_20.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki koyunlarla kaçış planını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 178,
@@ -2844,10 +2666,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 179,
@@ -2891,10 +2711,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 182,
@@ -2908,10 +2726,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 183,
@@ -2955,10 +2771,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 186,
@@ -2972,10 +2786,8 @@
     "image": "panel_22.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Poseidon ve deniz tehdidini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 187,
@@ -3019,10 +2831,8 @@
     "image": "panel_25.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “EVİNİ GÖRÜP YENİDEN KAYBETMEK” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 190,
@@ -3036,10 +2846,8 @@
     "image": "panel_25.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, İthaka ve eve dönüş temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 191,
@@ -3083,10 +2891,8 @@
     "image": "panel_24.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki İthaka ve eve dönüş temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 194,
@@ -3100,10 +2906,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 195,
@@ -3147,10 +2951,8 @@
     "image": "panel_26.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “EVİNİ GÖRÜP YENİDEN KAYBETMEK” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 198,
@@ -3164,10 +2966,8 @@
     "image": "panel_27.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki deniz yolculuğunu doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 199,
@@ -3211,10 +3011,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 202,
@@ -3228,10 +3026,8 @@
     "image": "panel_26.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “EVİNİ GÖRÜP YENİDEN KAYBETMEK” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 203,
@@ -3275,10 +3071,8 @@
     "image": "panel_27.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “EVİNİ GÖRÜP YENİDEN KAYBETMEK” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 206,
@@ -3292,10 +3086,8 @@
     "image": "panel_29.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 207,
@@ -3339,10 +3131,8 @@
     "image": "panel_29.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, deniz yolculuğunu doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 210,
@@ -3356,10 +3146,8 @@
     "image": "panel_29.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, deniz yolculuğunu doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 211,
@@ -3403,10 +3191,8 @@
     "image": "panel_29.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, deniz yolculuğunu doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 214,
@@ -3420,10 +3206,8 @@
     "image": "panel_29.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki deniz yolculuğunu doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 215,
@@ -3467,10 +3251,8 @@
     "image": "panel_32.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Kirke bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 218,
@@ -3484,10 +3266,8 @@
     "image": "panel_32.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “KİRKE’NİN ADASI: İNSAN NE ZAMAN CANAVARA DÖNÜŞÜR?” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 219,
@@ -3531,10 +3311,8 @@
     "image": "panel_32.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “KİRKE’NİN ADASI: İNSAN NE ZAMAN CANAVARA DÖNÜŞÜR?” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 222,
@@ -3548,10 +3326,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 223,
@@ -3595,10 +3371,8 @@
     "image": "panel_33.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Kirke bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 226,
@@ -3612,10 +3386,8 @@
     "image": "panel_33.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Kirke bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 227,
@@ -3659,10 +3431,8 @@
     "image": "panel_34.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Kirke bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 230,
@@ -3676,10 +3446,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 231,
@@ -3723,10 +3491,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 234,
@@ -3740,10 +3506,8 @@
     "image": "panel_33.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “KİRKE’NİN ADASI: İNSAN NE ZAMAN CANAVARA DÖNÜŞÜR?” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 235,
@@ -3787,10 +3551,8 @@
     "image": "panel_32.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, yay yarışmasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 238,
@@ -3804,10 +3566,8 @@
     "image": "panel_32.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 239,
@@ -3851,10 +3611,8 @@
     "image": "panel_35.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 242,
@@ -3868,10 +3626,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 243,
@@ -3915,10 +3671,8 @@
     "image": "panel_36.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “ÖLÜLERLE KONUŞMAK” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 246,
@@ -3932,10 +3686,8 @@
     "image": "panel_36.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “ÖLÜLERLE KONUŞMAK” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 247,
@@ -3979,10 +3731,8 @@
     "image": "panel_36.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 250,
@@ -3996,10 +3746,8 @@
     "image": "panel_37.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “ÖLÜLERLE KONUŞMAK” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 251,
@@ -4043,10 +3791,8 @@
     "image": "panel_36.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 254,
@@ -4060,10 +3806,8 @@
     "image": "panel_36.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, savaş atmosferini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 255,
@@ -4107,10 +3851,8 @@
     "image": "panel_36.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 258,
@@ -4124,10 +3866,8 @@
     "image": "panel_36.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 259,
@@ -4171,10 +3911,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 262,
@@ -4188,10 +3926,8 @@
     "image": "panel_36.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “ÖLÜLERLE KONUŞMAK” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 263,
@@ -4235,10 +3971,8 @@
     "image": "panel_36.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, ölüler dünyası ve kayıp temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 266,
@@ -4252,10 +3986,8 @@
     "image": "panel_36.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Troya/Truva bağlamını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 267,
@@ -4299,10 +4031,8 @@
     "image": "panel_38.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “ÖLÜLERLE KONUŞMAK” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 270,
@@ -4316,10 +4046,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 271,
@@ -4363,10 +4091,8 @@
     "image": "scene_19.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Sirenler bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 274,
@@ -4380,10 +4106,8 @@
     "image": "scene_19.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 275,
@@ -4427,10 +4151,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 278,
@@ -4444,10 +4166,8 @@
     "image": "scene_19.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 279,
@@ -4491,10 +4211,8 @@
     "image": "scene_19.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Sirenler bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 282,
@@ -4508,10 +4226,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 283,
@@ -4555,10 +4271,8 @@
     "image": "scene_19.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Sirenler bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 286,
@@ -4572,10 +4286,8 @@
     "image": "scene_19.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Sirenler bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 287,
@@ -4619,10 +4331,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 290,
@@ -4636,10 +4346,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 291,
@@ -4683,10 +4391,8 @@
     "image": "panel_39.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Kharybdis girdabını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 294,
@@ -4700,10 +4406,8 @@
     "image": "panel_39.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Kharybdis girdabını, deniz yolculuğunu doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 295,
@@ -4747,10 +4451,8 @@
     "image": "panel_40.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Skylla tehlikesini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 298,
@@ -4764,10 +4466,8 @@
     "image": "panel_40.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 299,
@@ -4811,10 +4511,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 302,
@@ -4828,10 +4526,8 @@
     "image": "panel_41.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Helios’un kutsal sığırlarını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 303,
@@ -4875,10 +4571,8 @@
     "image": "panel_41.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “KENDİ AKLINDAN KORUNMAK” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 306,
@@ -4892,10 +4586,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 307,
@@ -4939,10 +4631,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 310,
@@ -4956,10 +4646,8 @@
     "image": "panel_41.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Helios’un kutsal sığırlarını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 311,
@@ -5003,10 +4691,8 @@
     "image": "panel_44.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “KENDİ AKLINDAN KORUNMAK” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 314,
@@ -5020,10 +4706,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 315,
@@ -5067,10 +4751,8 @@
     "image": "panel_46.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Kalypso bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 318,
@@ -5084,10 +4766,8 @@
     "image": "panel_46.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “KALYPSO: HAPİSHANE Mİ, SIĞINAK MI?” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 319,
@@ -5131,10 +4811,8 @@
     "image": "panel_49.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 322,
@@ -5148,10 +4826,8 @@
     "image": "panel_48.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Kalypso bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 323,
@@ -5195,10 +4871,8 @@
     "image": "panel_47.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, lotus ve unutma temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 326,
@@ -5212,10 +4886,8 @@
     "image": "panel_46.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Kalypso bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 327,
@@ -5259,10 +4931,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 330,
@@ -5276,10 +4946,8 @@
     "image": "panel_46.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Kalypso bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 331,
@@ -5323,10 +4991,8 @@
     "image": "panel_47.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Kirke bölümünü doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 334,
@@ -5340,10 +5006,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 335,
@@ -5387,10 +5051,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 338,
@@ -5404,10 +5066,8 @@
     "image": "panel_49.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Poseidon ve deniz tehdidini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 339,
@@ -5451,10 +5111,8 @@
     "image": "panel_12.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 342,
@@ -5468,10 +5126,8 @@
     "image": "panel_12.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “ODYSSEUS KENDİ HİKÂYESİNİ Mİ ANLATIYOR?” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 343,
@@ -5515,10 +5171,8 @@
     "image": "panel_12.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Troya/Truva bağlamını, tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 346,
@@ -5532,10 +5186,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 347,
@@ -5579,10 +5231,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 350,
@@ -5596,10 +5246,8 @@
     "image": "panel_13.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 351,
@@ -5643,10 +5291,8 @@
     "image": "panel_13.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 354,
@@ -5660,10 +5306,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 355,
@@ -5707,10 +5351,8 @@
     "image": "panel_12.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki İthaka ve eve dönüş temasını, deniz yolculuğunu doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 358,
@@ -5724,10 +5366,8 @@
     "image": "panel_50.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, deniz yolculuğunu doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 359,
@@ -5771,10 +5411,8 @@
     "image": "panel_50.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 362,
@@ -5788,10 +5426,8 @@
     "image": "panel_51.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Polyphemos/Kiklop olayını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 363,
@@ -5835,10 +5471,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 366,
@@ -5852,10 +5486,8 @@
     "image": "panel_57.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Penelope’yi doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 367,
@@ -5899,10 +5531,8 @@
     "image": "panel_57.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Penelope’yi doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 370,
@@ -5916,10 +5546,8 @@
     "image": "panel_57.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 371,
@@ -5963,10 +5591,8 @@
     "image": "panel_55.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Troya/Truva bağlamını, tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 374,
@@ -5980,10 +5606,8 @@
     "image": "panel_57.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 375,
@@ -6027,10 +5651,8 @@
     "image": "panel_57.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Penelope’yi doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 378,
@@ -6044,10 +5666,8 @@
     "image": "panel_57.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 379,
@@ -6091,10 +5711,8 @@
     "image": "panel_57.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Penelope’yi doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 382,
@@ -6108,10 +5726,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 383,
@@ -6155,10 +5771,8 @@
     "image": "panel_51.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Troya/Truva bağlamını, tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 386,
@@ -6172,10 +5786,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 387,
@@ -6219,10 +5831,8 @@
     "image": "panel_54.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Telemakhos’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 390,
@@ -6236,10 +5846,8 @@
     "image": "panel_54.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Telemakhos’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 391,
@@ -6283,10 +5891,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 394,
@@ -6300,10 +5906,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 395,
@@ -6347,10 +5951,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 398,
@@ -6364,10 +5966,8 @@
     "image": "panel_59.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki savaş atmosferini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 399,
@@ -6411,10 +6011,8 @@
     "image": "panel_57.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Penelope’yi doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 402,
@@ -6428,10 +6026,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 403,
@@ -6475,10 +6071,8 @@
     "image": "panel_51.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, yay yarışmasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 406,
@@ -6492,10 +6086,8 @@
     "image": "panel_54.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Telemakhos’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 407,
@@ -6539,10 +6131,8 @@
     "image": "panel_54.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Telemakhos’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 410,
@@ -6556,10 +6146,8 @@
     "image": "panel_59.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “DİLENCİ, KÖPEK VE YAY” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 411,
@@ -6603,10 +6191,8 @@
     "image": "panel_59.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “DİLENCİ, KÖPEK VE YAY” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 414,
@@ -6620,10 +6206,8 @@
     "image": "panel_57.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Penelope’yi doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 415,
@@ -6667,10 +6251,8 @@
     "image": "panel_57.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Penelope’yi doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 418,
@@ -6684,10 +6266,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 419,
@@ -6731,10 +6311,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 422,
@@ -6748,10 +6326,8 @@
     "image": "panel_57.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, Penelope’yi doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 423,
@@ -6795,10 +6371,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 426,
@@ -6812,10 +6386,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 427,
@@ -6859,10 +6431,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 430,
@@ -6876,10 +6446,8 @@
     "image": "panel_60.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 431,
@@ -6923,10 +6491,8 @@
     "image": "panel_56.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Athena’yı doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 434,
@@ -6940,10 +6506,8 @@
     "image": "panel_56.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 435,
@@ -6987,10 +6551,8 @@
     "image": "panel_60.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Penelope’yi doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 438,
@@ -7004,10 +6566,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 439,
@@ -7051,10 +6611,8 @@
     "image": "panel_50.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 442,
@@ -7068,10 +6626,8 @@
     "image": "Dramatischer Seefahrer im Sonnenuntergang.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 443,
@@ -7115,10 +6671,8 @@
     "image": "Dramatischer Seefahrer im Sonnenuntergang.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u, savaş atmosferini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 446,
@@ -7132,10 +6686,8 @@
     "image": "panel_56.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 447,
@@ -7179,10 +6731,8 @@
     "image": "Dramatischer Seefahrer im Sonnenuntergang.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 450,
@@ -7196,10 +6746,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 451,
@@ -7243,10 +6791,8 @@
     "image": "Old Homer Writing The Iliad.png",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 454,
@@ -7260,10 +6806,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 455,
@@ -7307,10 +6851,8 @@
     "image": "panel_19.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Polyphemos/Kiklop olayını, mağara sahnesini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 458,
@@ -7324,10 +6866,8 @@
     "image": "panel_21.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Poseidon ve deniz tehdidini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 459,
@@ -7371,10 +6911,8 @@
     "image": "panel_39.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Skylla tehlikesini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 462,
@@ -7388,10 +6926,8 @@
     "image": "panel_39.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “KAHRAMAN MI, DÜZENBAZ MI?” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 463,
@@ -7435,10 +6971,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 466,
@@ -7452,10 +6986,8 @@
     "image": "panel_26.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Helios’un kutsal sığırlarını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 467,
@@ -7499,10 +7031,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Troya/Truva bağlamını, tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 470,
@@ -7516,10 +7046,8 @@
     "image": "panel_03.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, savaş atmosferini doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 471,
@@ -7563,10 +7091,8 @@
     "image": "panel_01.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 474,
@@ -7580,10 +7106,8 @@
     "image": "panel_01.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki Odysseus’u doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 475,
@@ -7627,10 +7151,8 @@
     "image": "panel_01.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını, yay yarışmasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 478,
@@ -7644,10 +7166,8 @@
     "image": "panel_02.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 479,
@@ -7691,10 +7211,8 @@
     "image": "panel_59.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, “KAHRAMAN MI, DÜZENBAZ MI?” bölümünün mekânını, karakterini veya duygusal tonunu destekliyor ve cümlenin anlamıyla çelişmiyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   },
   {
     "scene": 482,
@@ -7708,10 +7226,8 @@
     "image": "BLACK / NEW IMAGE NEEDED",
     "review_status": "YENİ GÖRSEL GEREKLİ",
     "reason": "Kütüphanedeki mevcut görseller arasında bu cümleyi doğrudan ve yanlış çağrışım yaratmadan anlatan yeterince uygun bir görsel bulunmadığı için yeni görsel gerekli.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_out",
+    "transition": "crossfade"
   },
   {
     "scene": 483,
@@ -7755,9 +7271,7 @@
     "image": "panel_01.jpg",
     "review_status": "MEVCUT GÖRSEL KULLANILABİLİR",
     "reason": "Görsel, cümledeki tahta at veya hile temasını doğrudan destekliyor; anlatılan kişi/olayla çelişen bir unsur taşımıyor.",
-    "motion": "static",
-    "transition": "crossfade",
-    "focus_x": 0.5,
-    "focus_y": 0.5
+    "motion": "zoom_in",
+    "transition": "crossfade"
   }
 ]
