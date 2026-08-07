@@ -54,6 +54,10 @@ def _safe_float(value: float) -> str:
     return f"{value:.6f}".rstrip("0").rstrip(".")
 
 
+def _safe_expr(value: float) -> str:
+    return f"{value:.7f}".rstrip("0").rstrip(".")
+
+
 def _motion_filter(scene: Scene, width: int, height: int, fps: int, duration: float) -> str:
     frames = max(2, math.ceil(duration * fps))
     denominator = max(1, frames - 1)
@@ -61,9 +65,11 @@ def _motion_filter(scene: Scene, width: int, height: int, fps: int, duration: fl
     focus_y = min(1.0, max(0.0, scene.focus_y))
     zoom = min(1.25, max(1.0, scene.zoom))
 
+    focus_x_expr = f"{focus_x:.5f}"
+    focus_y_expr = f"{focus_y:.5f}"
     cover = (
         f"scale={width}:{height}:force_original_aspect_ratio=increase,"
-        f"crop={width}:{height}:(iw-ow)*{focus_x:.5f}:(ih-oh)*{focus_y:.5f}"
+        f"crop={width}:{height}:(iw-ow)*{focus_x_expr}:(ih-oh)*{focus_y_expr}"
     )
 
     if scene.motion == "static" or zoom <= 1.0001:
@@ -71,29 +77,29 @@ def _motion_filter(scene: Scene, width: int, height: int, fps: int, duration: fl
 
     progress = f"on/{denominator}"
     if scene.motion == "zoom_in":
-        z_expr = f"1+{zoom - 1:.7f}*{progress}"
-        x_expr = f"(iw-iw/zoom)*{focus_x:.5f}"
-        y_expr = f"(ih-ih/zoom)*{focus_y:.5f}"
+        z_expr = f"1+{_safe_expr(zoom - 1)}*{progress}"
+        x_expr = f"round((iw-iw/{z_expr})*0.5)"
+        y_expr = f"round((ih-ih/{z_expr})*0.5)"
     elif scene.motion == "zoom_out":
-        z_expr = f"{zoom:.7f}-{zoom - 1:.7f}*{progress}"
-        x_expr = f"(iw-iw/zoom)*{focus_x:.5f}"
-        y_expr = f"(ih-ih/zoom)*{focus_y:.5f}"
+        z_expr = f"{_safe_expr(zoom)}-{_safe_expr(zoom - 1)}*{progress}"
+        x_expr = f"round((iw-iw/{z_expr})*0.5)"
+        y_expr = f"round((ih-ih/{z_expr})*0.5)"
     else:
-        z_expr = f"{zoom:.7f}"
+        z_expr = f"{_safe_expr(zoom)}"
         max_x = "(iw-iw/zoom)"
         max_y = "(ih-ih/zoom)"
         if scene.motion == "pan_left":
-            x_expr = f"{max_x}*(1-{progress})"
-            y_expr = f"{max_y}*{focus_y:.5f}"
+            x_expr = f"round({max_x}*(1-{progress}))"
+            y_expr = f"round({max_y}*{focus_y_expr})"
         elif scene.motion == "pan_right":
-            x_expr = f"{max_x}*{progress}"
-            y_expr = f"{max_y}*{focus_y:.5f}"
+            x_expr = f"round({max_x}*{progress})"
+            y_expr = f"round({max_y}*{focus_y_expr})"
         elif scene.motion == "pan_up":
-            x_expr = f"{max_x}*{focus_x:.5f}"
-            y_expr = f"{max_y}*(1-{progress})"
+            x_expr = f"round({max_x}*{focus_x_expr})"
+            y_expr = f"round({max_y}*(1-{progress}))"
         elif scene.motion == "pan_down":
-            x_expr = f"{max_x}*{focus_x:.5f}"
-            y_expr = f"{max_y}*{progress}"
+            x_expr = f"round({max_x}*{focus_x_expr})"
+            y_expr = f"round({max_y}*{progress})"
         else:
             raise ValueError(f"Unsupported motion: {scene.motion}")
 
@@ -104,9 +110,15 @@ def _motion_filter(scene: Scene, width: int, height: int, fps: int, duration: fl
     )
 
 
+# Bump this when the rendering pipeline itself changes (e.g. filter fixes) so that
+# cached scene clips from before the fix are not silently reused.
+_RENDER_VERSION = 2
+
+
 def _cache_key(scene: Scene, image_path: Path, duration: float, settings: RenderSettings) -> str:
     stat = image_path.stat() if image_path.exists() else None
     payload = {
+        "render_version": _RENDER_VERSION,
         "scene": {
             "id": scene.id,
             "image": scene.image,
@@ -182,6 +194,8 @@ def render_scene(
             "-y",
             "-loop",
             "1",
+            "-framerate",
+            str(settings.fps),
             "-i",
             str(image_path),
             "-vf",
