@@ -30,6 +30,25 @@ pip install -r requirements.txt
 
 FFmpeg ayrıca sistemde kurulu ve `PATH` içinde olmalıdır.
 
+### Web arayüzü (Streamlit)
+
+Komut satırı yerine tarayıcıdan çalışmak istersen:
+
+```bash
+pip install -r requirements-streamlit.txt
+streamlit run streamlit_app.py
+```
+
+Arayüz iki mod sunar:
+
+- **Sıfırdan video oluştur**: storyboard.json + ses + görselleri (tek tek ya da ZIP olarak) yükle,
+  otomatik doğrulamayı gör, isteğe bağlı olarak sadece belirli sahneler arasını render et, Preview
+  (960x540, hızlı) veya 1080p Final arasında seç, render edilen videoyu tarayıcıda izleyip indir.
+  Zaman damgası eksikse aynı sayfadaki "Whisper ile otomatik hizala" bölümünü kullanabilirsin.
+- **Var olan videoya zoom/pan ekle**: bitmiş bir videoyu yükle, durağan bölümleri otomatik tespit et,
+  önerilen efektleri (motion/zoom/odak noktası) tablo üzerinde düzenle veya sil, sonra sadece o
+  bölümlere zoom/pan uygulanmış videoyu render edip indir.
+
 ## 2. Proje dosyalarını yerleştir
 
 ```text
