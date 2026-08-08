@@ -103,6 +103,47 @@ python build_video.py \
 
 Müzik istemiyorsan `--music ...` satırını kaldır.
 
+## Hazır (bu script'le üretilmemiş) bir videoya zoom/pan eklemek
+
+Elinde bu proje dışında oluşturulmuş, tamamlanmış bir video varsa ve içindeki
+sabit kameralı/hareketsiz sahnelere sonradan zoom-in, zoom-out veya
+pan left/right efekti eklemek istiyorsan `detect-motion` ve `apply-motion`
+komutları bunun için var. Sadece belirlenen bölümler yeniden render edilir,
+videonun geri kalanı ve ses tamamen olduğu gibi korunur.
+
+1. Videodaki durağan bölümleri otomatik tara ve bir öneri dosyası üret:
+
+   ```bash
+   python detect_motion.py \
+     --video path/to/video.mp4 \
+     --output output/segments.json \
+     --min-duration 2.5
+   ```
+
+   Bu, sahne farkı (scene-change) skoru düşük kalan, en az `--min-duration`
+   saniye süren bölümleri bulur ve `output/segments.json` içine `zoom_out`,
+   `pan_left`, `pan_right`, `zoom_in` arasında sırayla dönen önerilerle yazar.
+   Beklenenden az/çok sahne bulunursa `--threshold` (varsayılan `0.012`,
+   düşürünce daha az hassas/daha az sahne bulunur) ve `--min-duration` ile
+   ayarla.
+
+2. `output/segments.json` dosyasını aç ve gözden geçir — istemediğin bir
+   segmenti sil, `motion`/`zoom`/`focus_x`/`focus_y` değerlerini elle
+   değiştir. Otomatik tespit kusursuz değildir, uygulamadan önce kontrol et.
+
+3. Onayladığın segmentleri videoya işle:
+
+   ```bash
+   python apply_motion.py \
+     --segments output/segments.json \
+     --output output/video_with_motion.mp4
+   ```
+
+Not: Bu, statik bir görselden farklı olarak gerçek video karesi üzerinde
+kırpma/yakınlaştırma yapar; dolayısıyla kare sınırlarının dışında yeni bir
+içerik "ortaya çıkaramaz" — zoom-out sadece kareye zaten var olan görüntüyü
+zamanla geri açar, zoom-in ise mevcut kareyi zamanla daraltır.
+
 ## Zaman damgası yoksa otomatik hizalama
 
 Bu özellik için:
