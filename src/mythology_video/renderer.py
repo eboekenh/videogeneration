@@ -58,12 +58,27 @@ def _safe_expr(value: float) -> str:
     return f"{value:.7f}".rstrip("0").rstrip(".")
 
 
-def _motion_filter(scene: Scene, width: int, height: int, fps: int, duration: float) -> str:
+def motion_filter_graph(
+    motion: str,
+    focus_x: float,
+    focus_y: float,
+    zoom: float,
+    width: int,
+    height: int,
+    fps: int,
+    duration: float,
+) -> str:
+    """Build the ffmpeg -vf graph for a single motion clip.
+
+    Works both for a looped still image (the storyboard renderer) and for a
+    trimmed segment of real footage (the standalone motion editor), since
+    zoompan with d=1 simply reshapes whatever frames flow into it.
+    """
     frames = max(2, math.ceil(duration * fps))
     denominator = max(1, frames - 1)
-    focus_x = min(1.0, max(0.0, scene.focus_x))
-    focus_y = min(1.0, max(0.0, scene.focus_y))
-    zoom = min(1.25, max(1.0, scene.zoom))
+    focus_x = min(1.0, max(0.0, focus_x))
+    focus_y = min(1.0, max(0.0, focus_y))
+    zoom = min(1.25, max(1.0, zoom))
 
     focus_x_expr = f"{focus_x:.5f}"
     focus_y_expr = f"{focus_y:.5f}"
@@ -72,15 +87,15 @@ def _motion_filter(scene: Scene, width: int, height: int, fps: int, duration: fl
         f"crop={width}:{height}:(iw-ow)*{focus_x_expr}:(ih-oh)*{focus_y_expr}"
     )
 
-    if scene.motion == "static" or zoom <= 1.0001:
+    if motion == "static" or zoom <= 1.0001:
         return f"{cover},fps={fps},format=yuv420p"
 
     progress = f"on/{denominator}"
-    if scene.motion == "zoom_in":
+    if motion == "zoom_in":
         z_expr = f"1+{_safe_expr(zoom - 1)}*{progress}"
         x_expr = f"round((iw-iw/{z_expr})*0.5)"
         y_expr = f"round((ih-ih/{z_expr})*0.5)"
-    elif scene.motion == "zoom_out":
+    elif motion == "zoom_out":
         z_expr = f"{_safe_expr(zoom)}-{_safe_expr(zoom - 1)}*{progress}"
         x_expr = f"round((iw-iw/{z_expr})*0.5)"
         y_expr = f"round((ih-ih/{z_expr})*0.5)"
@@ -88,20 +103,20 @@ def _motion_filter(scene: Scene, width: int, height: int, fps: int, duration: fl
         z_expr = f"{_safe_expr(zoom)}"
         max_x = "(iw-iw/zoom)"
         max_y = "(ih-ih/zoom)"
-        if scene.motion == "pan_left":
+        if motion == "pan_left":
             x_expr = f"round({max_x}*(1-{progress}))"
             y_expr = f"round({max_y}*{focus_y_expr})"
-        elif scene.motion == "pan_right":
+        elif motion == "pan_right":
             x_expr = f"round({max_x}*{progress})"
             y_expr = f"round({max_y}*{focus_y_expr})"
-        elif scene.motion == "pan_up":
+        elif motion == "pan_up":
             x_expr = f"round({max_x}*{focus_x_expr})"
             y_expr = f"round({max_y}*(1-{progress}))"
-        elif scene.motion == "pan_down":
+        elif motion == "pan_down":
             x_expr = f"round({max_x}*{focus_x_expr})"
             y_expr = f"round({max_y}*{progress})"
         else:
-            raise ValueError(f"Unsupported motion: {scene.motion}")
+            raise ValueError(f"Unsupported motion: {motion}")
 
     return (
         f"{cover},"
@@ -187,7 +202,10 @@ def render_scene(
         return cached
 
     ffmpeg = require_binary("ffmpeg")
-    vf = _motion_filter(scene, settings.width, settings.height, settings.fps, duration)
+    vf = motion_filter_graph(
+        scene.motion, scene.focus_x, scene.focus_y, scene.zoom,
+        settings.width, settings.height, settings.fps, duration,
+    )
     run_command(
         [
             ffmpeg,

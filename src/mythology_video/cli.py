@@ -7,6 +7,7 @@ from pathlib import Path
 
 from .alignment import align_storyboard
 from .media import probe_duration
+from .motion_editor import apply_motion_segments, detect_static_segments, load_segments, save_segments
 from .renderer import RenderSettings, build_video
 from .storyboard import (
     load_storyboard,
@@ -120,6 +121,40 @@ def align_command(args: argparse.Namespace) -> int:
     return 0
 
 
+def detect_motion_command(args: argparse.Namespace) -> int:
+    segments = detect_static_segments(
+        args.video,
+        threshold=args.threshold,
+        min_duration=args.min_duration,
+        sample_fps=args.sample_fps,
+        motions=args.motions.split(",") if args.motions else None,
+        zoom=args.zoom,
+    )
+    save_segments(args.video, segments, args.output)
+    if not segments:
+        print("No static segments found above --min-duration. Try lowering --threshold or --min-duration.")
+    else:
+        print(f"Found {len(segments)} static segment(s):")
+        for segment in segments:
+            print(f"  {segment.start:7.2f}s - {segment.end:7.2f}s  ({segment.duration:.2f}s)  -> {segment.motion}")
+    print(f"Segments written to {args.output}. Review/edit motion, zoom and focus before running 'apply-motion'.")
+    return 0
+
+
+def apply_motion_command(args: argparse.Namespace) -> int:
+    video_hint, segments = load_segments(args.segments)
+    video = args.video or (Path(video_hint) if video_hint else None)
+    if video is None:
+        print("❌ No --video given and the segments file has no 'video' field.", file=sys.stderr)
+        return 1
+    if not segments:
+        print("❌ No segments to apply.", file=sys.stderr)
+        return 1
+    apply_motion_segments(video, segments, args.output, crf=args.crf, preset=args.preset)
+    print(f"✅ Video created: {args.output}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="mythology-video",
@@ -166,6 +201,30 @@ def build_parser() -> argparse.ArgumentParser:
     align_parser.add_argument("--device", default="cpu")
     align_parser.add_argument("--compute-type", default="int8")
     align_parser.set_defaults(func=align_command)
+
+    detect_parser = subparsers.add_parser(
+        "detect-motion",
+        help="Scan an existing video for static (low-motion) segments and propose zoom/pan effects",
+    )
+    detect_parser.add_argument("--video", required=True, type=Path)
+    detect_parser.add_argument("--output", required=True, type=Path, help="Where to write the segments JSON")
+    detect_parser.add_argument("--threshold", type=float, default=0.012, help="Scene-change score below which a frame counts as static")
+    detect_parser.add_argument("--min-duration", type=float, default=2.5, help="Minimum static run length worth animating, in seconds")
+    detect_parser.add_argument("--sample-fps", type=float, default=6.0, help="Frame sampling rate used for motion detection")
+    detect_parser.add_argument("--zoom", type=float, default=1.12)
+    detect_parser.add_argument("--motions", help="Comma-separated motion rotation, e.g. zoom_out,pan_left,pan_right")
+    detect_parser.set_defaults(func=detect_motion_command)
+
+    apply_parser = subparsers.add_parser(
+        "apply-motion",
+        help="Render zoom/pan effects onto the segments listed in a segments JSON, leaving the rest of the video untouched",
+    )
+    apply_parser.add_argument("--segments", required=True, type=Path)
+    apply_parser.add_argument("--video", type=Path, help="Overrides the 'video' field stored in --segments")
+    apply_parser.add_argument("--output", required=True, type=Path)
+    apply_parser.add_argument("--crf", type=int, default=18)
+    apply_parser.add_argument("--preset", default="medium")
+    apply_parser.set_defaults(func=apply_motion_command)
 
     return parser
 
