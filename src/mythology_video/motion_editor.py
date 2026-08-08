@@ -365,9 +365,9 @@ def apply_motion_segments(
     filter_complex = ";\n".join(parts)
 
     ffmpeg = require_binary("ffmpeg")
+    output.parent.mkdir(parents=True, exist_ok=True)
     filter_file = output.with_suffix(".filter.txt")
     filter_file.write_text(filter_complex + "\n", encoding="utf-8")
-    output.parent.mkdir(parents=True, exist_ok=True)
 
     command = [
         ffmpeg,

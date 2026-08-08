@@ -512,3 +512,79 @@ def build_video(
             print(f"🧰 Kept work directory: {workdir}")
         else:
             shutil.rmtree(workdir, ignore_errors=True)
+
+
+def build_video_range(
+    storyboard: Storyboard,
+    images_dir: Path,
+    narration: Path,
+    output: Path,
+    settings: RenderSettings,
+    start_scene_id: str | None = None,
+    end_scene_id: str | None = None,
+    music: Path | None = None,
+) -> Path:
+    """Render only the scenes between start_scene_id and end_scene_id (inclusive).
+
+    The selected slice is rebased to start at 0s and the narration audio is
+    trimmed to the matching original time range, so the normal build_video
+    duration checks still apply to just that slice.
+    """
+    if start_scene_id is None and end_scene_id is None:
+        return build_video(storyboard, images_dir, narration, output, settings, music)
+
+    ids = [scene.id for scene in storyboard.scenes]
+    start_index = ids.index(start_scene_id) if start_scene_id is not None else 0
+    end_index = ids.index(end_scene_id) if end_scene_id is not None else len(ids) - 1
+    if start_index > end_index:
+        raise ValueError(f"Start scene '{start_scene_id}' comes after end scene '{end_scene_id}'.")
+
+    selected = storyboard.scenes[start_index : end_index + 1]
+    offset = selected[0].start
+    rebased_scenes = [
+        Scene(
+            id=scene.id,
+            sentence=scene.sentence,
+            image=scene.image,
+            start=round(scene.start - offset, 6),
+            end=round(scene.end - offset, 6),
+            motion=scene.motion,
+            focus_x=scene.focus_x,
+            focus_y=scene.focus_y,
+            zoom=scene.zoom,
+            notes=scene.notes,
+        )
+        for scene in selected
+    ]
+    range_duration = rebased_scenes[-1].end
+    sub_storyboard = Storyboard(
+        title=f"{storyboard.title} [{selected[0].id}..{selected[-1].id}]",
+        scenes=rebased_scenes,
+        metadata=storyboard.metadata,
+    )
+
+    workdir = Path(tempfile.mkdtemp(prefix="mythology_video_range_"))
+    try:
+        ffmpeg = require_binary("ffmpeg")
+        narration_slice = workdir / "narration_slice.wav"
+        run_command(
+            [
+                ffmpeg,
+                "-y",
+                "-ss",
+                _safe_float(offset),
+                "-t",
+                _safe_float(range_duration),
+                "-i",
+                str(narration),
+                "-ac",
+                "2",
+                "-ar",
+                "44100",
+                str(narration_slice),
+            ],
+            quiet=True,
+        )
+        return build_video(sub_storyboard, images_dir, narration_slice, output, settings, music)
+    finally:
+        shutil.rmtree(workdir, ignore_errors=True)
