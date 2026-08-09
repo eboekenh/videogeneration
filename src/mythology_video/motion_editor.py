@@ -5,9 +5,9 @@ import re
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
-from .media import CommandError, require_binary, run_command
+from .media import CommandError, require_binary, run_command_with_progress
 from .renderer import motion_filter_graph
 from .storyboard import ALLOWED_MOTIONS
 
@@ -309,6 +309,9 @@ def apply_motion_segments(
     *,
     crf: int = 18,
     preset: str = "medium",
+    target_width: int | None = None,
+    target_height: int | None = None,
+    on_progress: Callable[[float], None] | None = None,
 ) -> Path:
     video = Path(video)
     output = Path(output)
@@ -318,6 +321,10 @@ def apply_motion_segments(
     info = probe_video_info(video)
     ordered = sorted(segments, key=lambda item: item.start)
     _validate_segments(ordered, info.duration)
+
+    out_width = target_width or info.width
+    out_height = target_height or info.height
+    upscaling = (out_width, out_height) != (info.width, info.height)
 
     parts: list[str] = []
     labels: list[str] = []
@@ -330,9 +337,16 @@ def apply_motion_segments(
             return
         label = f"seg{label_index}"
         label_index += 1
-        parts.append(
-            f"[0:v]trim=start={_safe_num(start)}:end={_safe_num(end)},setpts=PTS-STARTPTS[{label}]"
-        )
+        if upscaling:
+            parts.append(
+                f"[0:v]trim=start={_safe_num(start)}:end={_safe_num(end)},setpts=PTS-STARTPTS,"
+                f"scale={out_width}:{out_height}:flags=lanczos:force_original_aspect_ratio=increase,"
+                f"crop={out_width}:{out_height}[{label}]"
+            )
+        else:
+            parts.append(
+                f"[0:v]trim=start={_safe_num(start)}:end={_safe_num(end)},setpts=PTS-STARTPTS[{label}]"
+            )
         labels.append(label)
 
     def add_motion(segment: MotionSegment) -> None:
@@ -344,8 +358,8 @@ def apply_motion_segments(
             segment.focus_x,
             segment.focus_y,
             segment.zoom,
-            info.width,
-            info.height,
+            out_width,
+            out_height,
             round(info.fps, 3),
             segment.duration,
         )
@@ -372,6 +386,9 @@ def apply_motion_segments(
     command = [
         ffmpeg,
         "-y",
+        "-progress",
+        "pipe:1",
+        "-nostats",
         "-i",
         str(video),
         "-filter_complex_script",
@@ -397,7 +414,7 @@ def apply_motion_segments(
         ]
     )
     try:
-        run_command(command, quiet=True)
+        run_command_with_progress(command, total_duration=info.duration, on_progress=on_progress)
     finally:
         filter_file.unlink(missing_ok=True)
     return output

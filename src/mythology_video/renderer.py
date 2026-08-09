@@ -83,7 +83,7 @@ def motion_filter_graph(
     focus_x_expr = f"{focus_x:.5f}"
     focus_y_expr = f"{focus_y:.5f}"
     cover = (
-        f"scale={width}:{height}:force_original_aspect_ratio=increase,"
+        f"scale={width}:{height}:flags=lanczos:force_original_aspect_ratio=increase,"
         f"crop={width}:{height}:(iw-ow)*{focus_x_expr}:(ih-oh)*{focus_y_expr}"
     )
 
@@ -101,8 +101,12 @@ def motion_filter_graph(
         y_expr = f"round((ih-ih/{z_expr})*0.5)"
     else:
         z_expr = f"{_safe_expr(zoom)}"
-        max_x = "(iw-iw/zoom)"
-        max_y = "(ih-ih/zoom)"
+        # Use the literal zoom value here, not zoompan's built-in `zoom`
+        # variable: that variable holds the *previous* frame's zoom, so on
+        # a segment's first frame (no previous frame yet) it defaults to 1
+        # and produces a one-frame pop before snapping to the real crop.
+        max_x = f"(iw-iw/({z_expr}))"
+        max_y = f"(ih-ih/({z_expr}))"
         if motion == "pan_left":
             x_expr = f"round({max_x}*(1-{progress}))"
             y_expr = f"round({max_y}*{focus_y_expr})"
@@ -127,7 +131,7 @@ def motion_filter_graph(
 
 # Bump this when the rendering pipeline itself changes (e.g. filter fixes) so that
 # cached scene clips from before the fix are not silently reused.
-_RENDER_VERSION = 2
+_RENDER_VERSION = 4
 
 
 def _cache_key(scene: Scene, image_path: Path, duration: float, settings: RenderSettings) -> str:

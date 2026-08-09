@@ -4,7 +4,7 @@ import json
 import shutil
 import subprocess
 from pathlib import Path
-from typing import Sequence
+from typing import Callable, Sequence
 
 
 class CommandError(RuntimeError):
@@ -33,6 +33,41 @@ def run_command(command: Sequence[str], *, quiet: bool = False) -> None:
     if completed.returncode != 0:
         detail = (completed.stderr or completed.stdout or "").strip()
         raise CommandError(f"Command failed with exit code {completed.returncode}:\n{detail}")
+
+
+def run_command_with_progress(
+    command: Sequence[str],
+    *,
+    total_duration: float,
+    on_progress: Callable[[float], None] | None = None,
+) -> None:
+    """Run an ffmpeg command (expected to include `-progress pipe:1`),
+    reporting fractional completion (0..1) via `on_progress` as it parses
+    the `out_time_ms=` lines ffmpeg writes to stdout."""
+    process = subprocess.Popen(
+        list(map(str, command)),
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        bufsize=1,
+    )
+    output_lines: list[str] = []
+    assert process.stdout is not None
+    for raw_line in process.stdout:
+        output_lines.append(raw_line)
+        line = raw_line.strip()
+        if on_progress is not None and total_duration > 0 and line.startswith("out_time_ms="):
+            try:
+                out_time_ms = int(line.split("=", 1)[1])
+            except ValueError:
+                continue
+            on_progress(min(out_time_ms / 1_000_000 / total_duration, 1.0))
+    returncode = process.wait()
+    if returncode != 0:
+        detail = "".join(output_lines[-40:]).strip()
+        raise CommandError(f"Command failed with exit code {returncode}:\n{detail}")
+    if on_progress is not None:
+        on_progress(1.0)
 
 
 def probe_duration(path: str | Path) -> float:

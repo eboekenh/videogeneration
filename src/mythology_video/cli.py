@@ -7,6 +7,7 @@ import time
 from pathlib import Path
 
 from .alignment import align_storyboard
+from .enhance import enhance_video
 from .media import probe_duration
 from .motion_editor import apply_motion_segments, detect_static_segments, load_segments, save_segments
 from .renderer import RenderSettings, build_video
@@ -166,6 +167,22 @@ def apply_motion_command(args: argparse.Namespace) -> int:
     return 0
 
 
+def enhance_command(args: argparse.Namespace) -> int:
+    enhance_video(
+        args.video,
+        args.output,
+        target_fps=args.target_fps,
+        interpolation=args.interpolation,
+        upscale_factor=args.upscale,
+        denoise=args.denoise,
+        sharpen=args.sharpen,
+        crf=args.crf,
+        preset=args.preset,
+    )
+    print(f"✅ Video created: {args.output}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="mythology-video",
@@ -236,6 +253,27 @@ def build_parser() -> argparse.ArgumentParser:
     apply_parser.add_argument("--crf", type=int, default=18)
     apply_parser.add_argument("--preset", default="medium")
     apply_parser.set_defaults(func=apply_motion_command)
+
+    enhance_parser = subparsers.add_parser(
+        "enhance-video",
+        help="Smooth a choppy render (motion-interpolated fps boost) and optionally upscale/denoise/sharpen it",
+    )
+    enhance_parser.add_argument("--video", required=True, type=Path)
+    enhance_parser.add_argument("--output", required=True, type=Path)
+    enhance_parser.add_argument(
+        "--target-fps", type=float, help="Interpolate up to this frame rate (only applied if higher than the source fps)"
+    )
+    enhance_parser.add_argument(
+        "--interpolation", default="blend", choices=["mci", "blend"],
+        help="blend = frame blending (safer, faster, recommended for motion graphics/AE renders); "
+        "mci = motion-compensated (smoothest on real footage, slower, can warp text/vector art)",
+    )
+    enhance_parser.add_argument("--upscale", type=float, default=1.0, help="Resolution multiplier, e.g. 1.5 or 2.0")
+    enhance_parser.add_argument("--denoise", action="store_true")
+    enhance_parser.add_argument("--sharpen", action="store_true")
+    enhance_parser.add_argument("--crf", type=int, default=18)
+    enhance_parser.add_argument("--preset", default="medium")
+    enhance_parser.set_defaults(func=enhance_command)
 
     return parser
 

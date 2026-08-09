@@ -9,6 +9,7 @@ import io
 import shutil
 import sys
 import tempfile
+import time
 import zipfile
 from pathlib import Path
 
@@ -20,6 +21,7 @@ if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 from mythology_video.alignment import align_storyboard
+from mythology_video.enhance import enhance_video
 from mythology_video.media import CommandError, probe_duration, require_binary
 from mythology_video.motion_editor import (
     APPLICABLE_MOTIONS,
@@ -51,6 +53,17 @@ def _workdir() -> Path:
     if "workdir" not in st.session_state:
         st.session_state["workdir"] = Path(tempfile.mkdtemp(prefix="streamlit_mv_"))
     return st.session_state["workdir"]
+
+
+def _format_eta(seconds: float) -> str:
+    seconds = max(0, int(seconds))
+    minutes, secs = divmod(seconds, 60)
+    if minutes >= 60:
+        hours, minutes = divmod(minutes, 60)
+        return f"{hours}sa {minutes}dk"
+    if minutes:
+        return f"{minutes}dk {secs}sn"
+    return f"{secs}sn"
 
 
 def _ffmpeg_ready() -> tuple[bool, str]:
@@ -371,13 +384,30 @@ def render_motion_tab() -> None:
         key="motion_segments_editor",
     )
 
-    st.subheader("4. Kalite")
+    st.subheader("4. Kalite ve çözünürlük")
     quality = st.radio(
-        "Render kalitesi", ["Preview (hızlı, düşük kalite)", "Final (yüksek kalite)"],
+        "Render kalitesi", ["Final (yüksek kalite)", "Preview (hızlı, düşük kalite)"],
         horizontal=True, key="motion_quality",
     )
     crf, preset = (30, "veryfast") if quality.startswith("Preview") else (18, "medium")
-    st.caption(f"Video zaten {info.width}×{info.height} çözünürlükte; bu araç çözünürlüğü değiştirmez.")
+
+    scale_labels = {
+        "1x (kaynakla aynı)": 1.0,
+        "1.5x büyüt": 1.5,
+        "2x büyüt": 2.0,
+    }
+    scale_choice = st.radio(
+        "Çıkış çözünürlüğü", list(scale_labels), horizontal=True, key="motion_upscale",
+        help="FFmpeg'in lanczos filtresiyle piksel sayısını artırır. Gerçek yeni detay eklemez, "
+        "sadece büyütüp pürüzsüzleştirir — kaynağın kendisi düşük çözünürlükse görüntü yine de net olmaz.",
+    )
+    scale_factor = scale_labels[scale_choice]
+    target_width = int(round(info.width * scale_factor / 2)) * 2
+    target_height = int(round(info.height * scale_factor / 2)) * 2
+    if scale_factor == 1.0:
+        st.caption(f"Video {info.width}×{info.height} çözünürlükte kalacak.")
+    else:
+        st.caption(f"Video {info.width}×{info.height} → {target_width}×{target_height} olarak büyütülecek.")
 
     if st.button("🎬 Efekti Uygula ve Render Et", type="primary"):
         try:
@@ -397,13 +427,158 @@ def render_motion_tab() -> None:
             return
 
         output_path = _workdir() / "output" / "motion_output.mp4"
+        progress_bar = st.progress(0.0)
+        status_text = st.empty()
+        start_time = time.time()
+
+        def _on_progress(fraction: float) -> None:
+            elapsed = time.time() - start_time
+            percent = int(fraction * 100)
+            if fraction >= 0.999:
+                status_text.text(f"%{percent} — tamamlandı ({_format_eta(elapsed)})")
+            elif fraction > 0.02:
+                eta = elapsed / fraction - elapsed
+                status_text.text(f"%{percent} — kalan süre ~{_format_eta(eta)}")
+            else:
+                status_text.text(f"%{percent} — kalan süre hesaplanıyor...")
+            progress_bar.progress(min(fraction, 1.0))
+
         try:
-            with st.spinner("Render ediliyor..."):
-                apply_motion_segments(video_path, segments, output_path, crf=crf, preset=preset)
+            apply_motion_segments(
+                video_path,
+                segments,
+                output_path,
+                crf=crf,
+                preset=preset,
+                target_width=target_width if scale_factor != 1.0 else None,
+                target_height=target_height if scale_factor != 1.0 else None,
+                on_progress=_on_progress,
+            )
             st.success("Video hazır!")
             st.video(str(output_path))
             st.download_button(
                 "Videoyu indir", data=output_path.read_bytes(), file_name="video_with_motion.mp4", mime="video/mp4"
+            )
+        except ValueError as exc:
+            st.error(str(exc))
+        except CommandError as exc:
+            st.error(f"FFmpeg hatası:\n{exc}")
+
+
+# ---------------------------------------------------------------------------
+# Tab 3: smooth a choppy render and optionally upscale/denoise/sharpen it
+# ---------------------------------------------------------------------------
+
+def render_enhance_tab() -> None:
+    st.subheader("1. Video yükle")
+    video_file = st.file_uploader("Video dosyası (mp4)", type=["mp4"], key="enhance_video_upload")
+    video_path = _persist_upload(
+        video_file, _workdir() / "enhance" / ("input_" + (video_file.name if video_file else "")), "enhance_video_path"
+    )
+    if not video_path:
+        st.info("Devam etmek için bir mp4 video yükle (örn. After Effects'ten dışa aktarılmış, takılan/kesik bir render).")
+        return
+
+    try:
+        info = probe_video_info(video_path)
+    except CommandError as exc:
+        st.error(f"Video okunamadı: {exc}")
+        return
+    st.caption(
+        f"{info.width}×{info.height}, {info.fps:.2f} fps, {info.duration:.1f}s"
+        f"{' (ses var)' if info.has_audio else ' (ses yok)'}"
+    )
+
+    st.subheader("2. Akıcılık (kare hızını artırarak)")
+    smooth_on = st.checkbox("Kare hızını artırarak akıcılaştır", value=True, key="enhance_smooth_on")
+    target_fps: float | None = None
+    interpolation = "blend"
+    if smooth_on:
+        candidate_fps = sorted({fps for fps in (30.0, 50.0, 60.0, round(info.fps * 2, 2)) if fps > info.fps})
+        if not candidate_fps:
+            st.caption(f"Video zaten {info.fps:.2f} fps — daha da artırmak için hedef değer bulunamadı.")
+            smooth_on = False
+        else:
+            target_fps = st.select_slider(
+                "Hedef kare hızı (fps)", options=candidate_fps, value=candidate_fps[-1], key="enhance_target_fps"
+            )
+            method_choice = st.radio(
+                "Yöntem",
+                ["Güvenli (karışım/blend, önerilen)", "Hareket telafili (en pürüzsüz, titremeye açık)"],
+                horizontal=True,
+                key="enhance_interp_method",
+            )
+            interpolation = "blend" if method_choice.startswith("Güvenli") else "mci"
+            st.caption(
+                "After Effects gibi vektör/motion-graphic render'larda hareket telafili yöntem "
+                "kareler arası titreme/dalgalanma yapabilir (yanlış hareket vektörü tahmini yüzünden). "
+                "Bu yüzden varsayılan 'Güvenli' — gerçek kamera görüntüsü işliyorsan hareket telafilini deneyebilirsin."
+            )
+
+    st.subheader("3. Kalite iyileştirme (opsiyonel)")
+    col1, col2 = st.columns(2)
+    denoise = col1.checkbox("Gürültü azalt (denoise)", key="enhance_denoise")
+    sharpen = col2.checkbox("Netleştir (sharpen)", key="enhance_sharpen")
+
+    scale_labels = {"1x (kaynakla aynı)": 1.0, "1.5x büyüt": 1.5, "2x büyüt": 2.0}
+    scale_choice = st.radio("Çözünürlük", list(scale_labels), horizontal=True, key="enhance_upscale")
+    scale_factor = scale_labels[scale_choice]
+    if scale_factor == 1.0:
+        st.caption(f"Video {info.width}×{info.height} çözünürlükte kalacak.")
+    else:
+        target_w = int(round(info.width * scale_factor / 2)) * 2
+        target_h = int(round(info.height * scale_factor / 2)) * 2
+        st.caption(
+            f"Video {info.width}×{info.height} → {target_w}×{target_h} olarak büyütülecek. "
+            "FFmpeg'in lanczos filtresiyle büyütür; gerçek yeni detay eklemez, sadece pürüzsüzleştirir."
+        )
+
+    st.subheader("4. Kodlama kalitesi")
+    quality = st.radio(
+        "Render kalitesi", ["Final (yüksek kalite)", "Preview (hızlı, düşük kalite)"],
+        horizontal=True, key="enhance_quality",
+    )
+    crf, preset = (30, "veryfast") if quality.startswith("Preview") else (18, "medium")
+
+    if not (smooth_on or denoise or sharpen or scale_factor != 1.0):
+        st.info("Devam etmek için akıcılaştırma, gürültü azaltma, netleştirme ya da büyütmeden en az birini seç.")
+        return
+
+    if st.button("✨ İşle", type="primary"):
+        output_path = _workdir() / "output" / "enhanced_output.mp4"
+        progress_bar = st.progress(0.0)
+        status_text = st.empty()
+        start_time = time.time()
+
+        def _on_progress(fraction: float) -> None:
+            elapsed = time.time() - start_time
+            percent = int(fraction * 100)
+            if fraction >= 0.999:
+                status_text.text(f"%{percent} — tamamlandı ({_format_eta(elapsed)})")
+            elif fraction > 0.02:
+                eta = elapsed / fraction - elapsed
+                status_text.text(f"%{percent} — kalan süre ~{_format_eta(eta)}")
+            else:
+                status_text.text(f"%{percent} — kalan süre hesaplanıyor...")
+            progress_bar.progress(min(fraction, 1.0))
+
+        try:
+            enhance_video(
+                video_path,
+                output_path,
+                target_fps=target_fps if smooth_on else None,
+                interpolation=interpolation,
+                upscale_factor=scale_factor,
+                denoise=denoise,
+                sharpen=sharpen,
+                crf=crf,
+                preset=preset,
+                on_progress=_on_progress,
+            )
+            st.success("Video hazır!")
+            st.video(str(output_path))
+            st.download_button(
+                "Videoyu indir", data=output_path.read_bytes(), file_name="video_enhanced.mp4", mime="video/mp4"
             )
         except ValueError as exc:
             st.error(str(exc))
@@ -426,7 +601,11 @@ with st.sidebar:
     st.header("Mod")
     mode = st.radio(
         "Ne yapmak istiyorsun?",
-        ["Sıfırdan video oluştur", "Var olan videoya zoom/pan ekle"],
+        [
+            "Sıfırdan video oluştur",
+            "Var olan videoya zoom/pan ekle",
+            "Videoyu akıcılaştır / kalite artır",
+        ],
         label_visibility="collapsed",
     )
     st.divider()
@@ -436,5 +615,7 @@ with st.sidebar:
 
 if mode == "Sıfırdan video oluştur":
     render_build_tab()
-else:
+elif mode == "Var olan videoya zoom/pan ekle":
     render_motion_tab()
+else:
+    render_enhance_tab()
